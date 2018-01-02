@@ -1,7 +1,6 @@
 # 📱 Simple Sample Swift Project
 ![](https://img.shields.io/badge/Platform-iOS-green.svg)
 ![](https://img.shields.io/badge/swift-4.0-orange.svg)
-![](https://img.shields.io/travis/USER/REPO.svg)
 ![](https://img.shields.io/badge/category-Utility-blue.svg)
 ![](https://img.shields.io/badge/Character-Blog-brightgreen.svg)
 ![](https://img.shields.io/badge/channel-youtube-red.svg)
