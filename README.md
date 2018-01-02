@@ -4,8 +4,8 @@
 ![](https://img.shields.io/travis/USER/REPO.svg)
 ![](https://img.shields.io/badge/category-Utility-blue.svg)
 ![](https://img.shields.io/badge/Character-Blog-brightgreen.svg)
-![](https://img.shields.io/badge/Progress-ing-yellow.svg)
 ![](https://img.shields.io/badge/channel-youtube-red.svg)
+![](https://img.shields.io/badge/Progress-ing-yellow.svg)
 
 ## Contents
 * iOS Project Sample
