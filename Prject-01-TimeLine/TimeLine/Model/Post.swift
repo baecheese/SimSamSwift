@@ -10,10 +10,17 @@ import Foundation
 
 struct Post {
     let postID: Int
-    let thumbnail: String//url
+    let thumbnail: String
     let nickName: String
     let userID: String
-    let time: String
+    let saveTime: TimeInterval
     let contents: String
-    let imageContents: String//url
+    let imageContents: String?
+    
+    func haveImageContents() -> Bool {
+        if nil != imageContents {
+            return true
+        }
+        return false
+    }
 }

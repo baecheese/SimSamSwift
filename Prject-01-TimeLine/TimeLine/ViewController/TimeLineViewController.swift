@@ -10,6 +10,24 @@ import UIKit
 
 class TimeLineViewController: UIViewController {
 
+    let tempPosts:[Post] = [Post(postID: 0, thumbnail: "thumbnail.png",
+                          nickName: "cheese", userID: "@cheese",
+                          saveTime: TimeInterval().now().minusHour(hourAmount: 3),
+                          contents: "3시간 전에 쓴 포스트입니다", imageContents: nil),
+                     Post(postID: 1, thumbnail: "thumbnail.png",
+                          nickName: "cheese", userID: "@cheese",
+                          saveTime: TimeInterval().now().minusHour(hourAmount: 2),
+                          contents: "2시간 전에 쓴 포스트입니다", imageContents: nil),
+                     Post(postID: 2, thumbnail: "thumbnail.png",
+                          nickName: "cheese", userID: "@cheese",
+                          saveTime: TimeInterval().now().minusHour(hourAmount: 1),
+                          contents: "1시간 전에 쓴 포스트입니다", imageContents: "contents.jpg"),
+                     Post(postID: 3, thumbnail: "thumbnail.png",
+                          nickName: "cheese", userID: "@cheese",
+                          saveTime: TimeInterval().now(),
+                          contents: "방금 쓴 포스트입니다", imageContents: nil)
+    ]
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -25,8 +43,8 @@ class TimeLineViewController: UIViewController {
 }
 
 extension TimeLineViewController : ImagePostTableViewCellDelegate {
-    func answerPost(id: Int) {
-        print("click anwser post \(id)")
+    func mentionPost(id: Int) {
+        print("click mention post \(id)")
     }
     
     func sharePost(id: Int) {
@@ -41,18 +59,27 @@ extension TimeLineViewController : ImagePostTableViewCellDelegate {
 extension TimeLineViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return tempPosts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = Bundle.main.loadNibNamed("ImagePostTableViewCell", owner: nil, options: nil)?.first as! ImagePostTableViewCell
-        let post = Post(postID: indexPath.row, thumbnail: "thumbnail.jpeg", nickName: "user", userID: "@user", time: "12:00", contents: "content test", imageContents: "contents.jpg")
-        cell.setPostInfo(post: post)
-        cell.delegate = self
+        let currentPost = tempPosts[indexPath.row]
+        if currentPost.haveImageContents() {
+            let cell = Bundle.main.loadNibNamed("ImagePostTableViewCell", owner: nil, options: nil)?.first as! ImagePostTableViewCell
+            cell.setPostInfo(post: currentPost)
+            cell.delegate = self
+            cell.selectionStyle = .none
+            return cell
+        }
+        let cell = Bundle.main.loadNibNamed("TextPostTableViewCell", owner: nil, options: nil)?.first as! TextPostTableViewCell
+        cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if tempPosts[indexPath.row].haveImageContents() {
+            return 200.0
+        }
         return 100.0
     }
     

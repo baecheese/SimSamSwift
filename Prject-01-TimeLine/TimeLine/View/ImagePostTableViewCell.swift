@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ImagePostTableViewCellDelegate {
-    func answerPost(id:Int)
+    func mentionPost(id:Int)
     func sharePost(id:Int)
     func starPost(id:Int)
 }
@@ -18,18 +18,18 @@ class ImagePostTableViewCell: UITableViewCell {
 
     var delegate:ImagePostTableViewCellDelegate?
     var postID:Int?
-    @IBOutlet weak var thumbnail: UIImageView!
+    @IBOutlet weak var thumbnail: UIImageView!//
     @IBOutlet weak var nickName: UILabel!
     @IBOutlet weak var userID: UILabel!
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var contents: UILabel!
-    @IBOutlet weak var imageContents: UIImageView!
+    @IBOutlet weak var imageContents: UIImageView!//
     
     func setPostInfo(post:Post) {
         settingCell(id: post.postID, thumbnail: post.thumbnail,
                     nickName: post.nickName, userID: post.userID,
-                    time: post.time, contents: post.contents,
-                    imageContents: post.imageContents)
+                    time: TimeInterval.getTwitterTime(saveTime: post.saveTime), contents: post.contents,
+                    imageContents: post.imageContents!)
     }
     
     private func settingCell(id:Int, thumbnail:String, nickName:String, userID:String, time:String, contents:String, imageContents:String) {
@@ -39,19 +39,19 @@ class ImagePostTableViewCell: UITableViewCell {
         self.userID.text = userID
         self.time.text = time // TimeInterval로 변경 (to do)
         self.contents.text = contents
-        self.imageContents = UIImageView(image: UIImage(named: contents))
+        self.imageContents = UIImageView(image: UIImage(named: imageContents))
     }
     
     @IBAction func clickButton(_ sender: UIButton) {
         // tag 0 답변 / 1 리트윗 / 2 마음
         if let selectPostID = postID {
-            if 0 == sender.tag {
-                delegate?.answerPost(id: selectPostID)
+            if CellAction.metion.rawValue == sender.tag {
+                delegate?.mentionPost(id: selectPostID)
             }
-            else if 1 == sender.tag {
+            else if CellAction.share.rawValue == sender.tag {
                 delegate?.sharePost(id: selectPostID)
             }
-            else if 2 == sender.tag {
+            else if CellAction.star.rawValue == sender.tag {
                 delegate?.starPost(id: selectPostID)
             }
         }
@@ -65,4 +65,10 @@ class ImagePostTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+}
+
+enum CellAction : Int {
+    case metion = 0
+    case share = 1
+    case star = 2
 }
