@@ -21,7 +21,7 @@ class TextPostTableViewCell: UITableViewCell {
         self.postID = post.postID
         self.thumbnail.image = UIImage(named: post.thumbnail)
         self.nickname.text = post.nickName
-        self.userID.text = post.nickName
+        self.userID.text = post.userID
         self.contents.text = post.contents
         self.time.text = TimeInterval.getTwitterTime(saveTime: post.saveTime)
     }
