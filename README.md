@@ -13,17 +13,17 @@
 * Simple Utility Project
 
 ## Index
-### [project 01. Timeline UI](https://github.com/baecheese/Simple-Sample-Swift/tree/Project-01-Timeline/Prject-01-TimeLine)
+### [Project-01-Timeline UI](https://github.com/baecheese/Simple-Sample-Swift/tree/Project-01-Timeline/Prject-01-TimeLine)
 ![](https://github.com/baecheese/Simple-Sample-Swift/blob/Project-01-Timeline/Resource/Project%201-TimeLine%20UI-Screenshot.png?raw=true)
-### project 02. limit text edit
-### project 03. To Do List
-### project 04. Login
-### project 05. Loading Bar Animation
-### project 06. My Page
-### project 07. Local Caching (in tableview)
-### project 08. CollectionView
-### project 09. Secret Album
-### project 10. Widget
-### project 11. Notification
-### project 12. SplitView
-### project 13. Search List
+### Project-02-limit text edit
+### Project-03-To Do List
+### Project-04-Login
+### Project-05-Loading Bar Animation
+### Project-06-My Page
+### Project-07-Local Caching (in tableview)
+### Project-08-CollectionView
+### Project-09-Secret Album
+### Project-10-Widget
+### Project-11-Notification
+### Project-12-SplitView
+### project-13-Search List
