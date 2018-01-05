@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03F991DB1FFF3E6C004AE20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F991DA1FFF3E6C004AE20D /* AppDelegate.swift */; };
+		03F991DD1FFF3E6C004AE20D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F991DC1FFF3E6C004AE20D /* ViewController.swift */; };
+		03F991E01FFF3E6C004AE20D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F991DE1FFF3E6C004AE20D /* Main.storyboard */; };
+		03F991E21FFF3E6C004AE20D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F991E11FFF3E6C004AE20D /* Assets.xcassets */; };
+		03F991E51FFF3E6C004AE20D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F991E31FFF3E6C004AE20D /* LaunchScreen.storyboard */; };
+		03F991F01FFF3E6C004AE20D /* LimitTextEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F991EF1FFF3E6C004AE20D /* LimitTextEditorTests.swift */; };
+		03F991FB1FFF3E6C004AE20D /* LimitTextEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F991FA1FFF3E6C004AE20D /* LimitTextEditorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03F991EC1FFF3E6C004AE20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F991CF1FFF3E6C004AE20D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F991D61FFF3E6C004AE20D;
+			remoteInfo = LimitTextEditor;
+		};
+		03F991F71FFF3E6C004AE20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F991CF1FFF3E6C004AE20D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F991D61FFF3E6C004AE20D;
+			remoteInfo = LimitTextEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03F991D71FFF3E6C004AE20D /* LimitTextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LimitTextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F991DA1FFF3E6C004AE20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03F991DC1FFF3E6C004AE20D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03F991DF1FFF3E6C004AE20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03F991E11FFF3E6C004AE20D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03F991E41FFF3E6C004AE20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03F991E61FFF3E6C004AE20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F991EB1FFF3E6C004AE20D /* LimitTextEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LimitTextEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F991EF1FFF3E6C004AE20D /* LimitTextEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitTextEditorTests.swift; sourceTree = "<group>"; };
+		03F991F11FFF3E6C004AE20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F991F61FFF3E6C004AE20D /* LimitTextEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LimitTextEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F991FA1FFF3E6C004AE20D /* LimitTextEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitTextEditorUITests.swift; sourceTree = "<group>"; };
+		03F991FC1FFF3E6C004AE20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03F991D41FFF3E6C004AE20D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F991E81FFF3E6C004AE20D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F991F31FFF3E6C004AE20D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03F991CE1FFF3E6C004AE20D = {
+			isa = PBXGroup;
+			children = (
+				03F991D91FFF3E6C004AE20D /* LimitTextEditor */,
+				03F991EE1FFF3E6C004AE20D /* LimitTextEditorTests */,
+				03F991F91FFF3E6C004AE20D /* LimitTextEditorUITests */,
+				03F991D81FFF3E6C004AE20D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03F991D81FFF3E6C004AE20D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03F991D71FFF3E6C004AE20D /* LimitTextEditor.app */,
+				03F991EB1FFF3E6C004AE20D /* LimitTextEditorTests.xctest */,
+				03F991F61FFF3E6C004AE20D /* LimitTextEditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03F991D91FFF3E6C004AE20D /* LimitTextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				03F991DA1FFF3E6C004AE20D /* AppDelegate.swift */,
+				03F991DC1FFF3E6C004AE20D /* ViewController.swift */,
+				03F991DE1FFF3E6C004AE20D /* Main.storyboard */,
+				03F991E11FFF3E6C004AE20D /* Assets.xcassets */,
+				03F991E31FFF3E6C004AE20D /* LaunchScreen.storyboard */,
+				03F991E61FFF3E6C004AE20D /* Info.plist */,
+			);
+			path = LimitTextEditor;
+			sourceTree = "<group>";
+		};
+		03F991EE1FFF3E6C004AE20D /* LimitTextEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				03F991EF1FFF3E6C004AE20D /* LimitTextEditorTests.swift */,
+				03F991F11FFF3E6C004AE20D /* Info.plist */,
+			);
+			path = LimitTextEditorTests;
+			sourceTree = "<group>";
+		};
+		03F991F91FFF3E6C004AE20D /* LimitTextEditorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03F991FA1FFF3E6C004AE20D /* LimitTextEditorUITests.swift */,
+				03F991FC1FFF3E6C004AE20D /* Info.plist */,
+			);
+			path = LimitTextEditorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03F991D61FFF3E6C004AE20D /* LimitTextEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F991FF1FFF3E6C004AE20D /* Build configuration list for PBXNativeTarget "LimitTextEditor" */;
+			buildPhases = (
+				03F991D31FFF3E6C004AE20D /* Sources */,
+				03F991D41FFF3E6C004AE20D /* Frameworks */,
+				03F991D51FFF3E6C004AE20D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LimitTextEditor;
+			productName = LimitTextEditor;
+			productReference = 03F991D71FFF3E6C004AE20D /* LimitTextEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03F991EA1FFF3E6C004AE20D /* LimitTextEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F992021FFF3E6C004AE20D /* Build configuration list for PBXNativeTarget "LimitTextEditorTests" */;
+			buildPhases = (
+				03F991E71FFF3E6C004AE20D /* Sources */,
+				03F991E81FFF3E6C004AE20D /* Frameworks */,
+				03F991E91FFF3E6C004AE20D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03F991ED1FFF3E6C004AE20D /* PBXTargetDependency */,
+			);
+			name = LimitTextEditorTests;
+			productName = LimitTextEditorTests;
+			productReference = 03F991EB1FFF3E6C004AE20D /* LimitTextEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03F991F51FFF3E6C004AE20D /* LimitTextEditorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F992051FFF3E6C004AE20D /* Build configuration list for PBXNativeTarget "LimitTextEditorUITests" */;
+			buildPhases = (
+				03F991F21FFF3E6C004AE20D /* Sources */,
+				03F991F31FFF3E6C004AE20D /* Frameworks */,
+				03F991F41FFF3E6C004AE20D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03F991F81FFF3E6C004AE20D /* PBXTargetDependency */,
+			);
+			name = LimitTextEditorUITests;
+			productName = LimitTextEditorUITests;
+			productReference = 03F991F61FFF3E6C004AE20D /* LimitTextEditorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03F991CF1FFF3E6C004AE20D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ChesseFactory;
+				TargetAttributes = {
+					03F991D61FFF3E6C004AE20D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					03F991EA1FFF3E6C004AE20D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03F991D61FFF3E6C004AE20D;
+					};
+					03F991F51FFF3E6C004AE20D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03F991D61FFF3E6C004AE20D;
+					};
+				};
+			};
+			buildConfigurationList = 03F991D21FFF3E6C004AE20D /* Build configuration list for PBXProject "LimitTextEditor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03F991CE1FFF3E6C004AE20D;
+			productRefGroup = 03F991D81FFF3E6C004AE20D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03F991D61FFF3E6C004AE20D /* LimitTextEditor */,
+				03F991EA1FFF3E6C004AE20D /* LimitTextEditorTests */,
+				03F991F51FFF3E6C004AE20D /* LimitTextEditorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03F991D51FFF3E6C004AE20D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F991E51FFF3E6C004AE20D /* LaunchScreen.storyboard in Resources */,
+				03F991E21FFF3E6C004AE20D /* Assets.xcassets in Resources */,
+				03F991E01FFF3E6C004AE20D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F991E91FFF3E6C004AE20D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F991F41FFF3E6C004AE20D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03F991D31FFF3E6C004AE20D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F991DD1FFF3E6C004AE20D /* ViewController.swift in Sources */,
+				03F991DB1FFF3E6C004AE20D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F991E71FFF3E6C004AE20D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F991F01FFF3E6C004AE20D /* LimitTextEditorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F991F21FFF3E6C004AE20D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F991FB1FFF3E6C004AE20D /* LimitTextEditorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03F991ED1FFF3E6C004AE20D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03F991D61FFF3E6C004AE20D /* LimitTextEditor */;
+			targetProxy = 03F991EC1FFF3E6C004AE20D /* PBXContainerItemProxy */;
+		};
+		03F991F81FFF3E6C004AE20D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03F991D61FFF3E6C004AE20D /* LimitTextEditor */;
+			targetProxy = 03F991F71FFF3E6C004AE20D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03F991DE1FFF3E6C004AE20D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03F991DF1FFF3E6C004AE20D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03F991E31FFF3E6C004AE20D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03F991E41FFF3E6C004AE20D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03F991FD1FFF3E6C004AE20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03F991FE1FFF3E6C004AE20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03F992001FFF3E6C004AE20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UT834J75J3;
+				INFOPLIST_FILE = LimitTextEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.LimitTextEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03F992011FFF3E6C004AE20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UT834J75J3;
+				INFOPLIST_FILE = LimitTextEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.LimitTextEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03F992031FFF3E6C004AE20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UT834J75J3;
+				INFOPLIST_FILE = LimitTextEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.LimitTextEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LimitTextEditor.app/LimitTextEditor";
+			};
+			name = Debug;
+		};
+		03F992041FFF3E6C004AE20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UT834J75J3;
+				INFOPLIST_FILE = LimitTextEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.LimitTextEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LimitTextEditor.app/LimitTextEditor";
+			};
+			name = Release;
+		};
+		03F992061FFF3E6C004AE20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UT834J75J3;
+				INFOPLIST_FILE = LimitTextEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.LimitTextEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LimitTextEditor;
+			};
+			name = Debug;
+		};
+		03F992071FFF3E6C004AE20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UT834J75J3;
+				INFOPLIST_FILE = LimitTextEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.LimitTextEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LimitTextEditor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03F991D21FFF3E6C004AE20D /* Build configuration list for PBXProject "LimitTextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F991FD1FFF3E6C004AE20D /* Debug */,
+				03F991FE1FFF3E6C004AE20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F991FF1FFF3E6C004AE20D /* Build configuration list for PBXNativeTarget "LimitTextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F992001FFF3E6C004AE20D /* Debug */,
+				03F992011FFF3E6C004AE20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F992021FFF3E6C004AE20D /* Build configuration list for PBXNativeTarget "LimitTextEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F992031FFF3E6C004AE20D /* Debug */,
+				03F992041FFF3E6C004AE20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F992051FFF3E6C004AE20D /* Build configuration list for PBXNativeTarget "LimitTextEditorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F992061FFF3E6C004AE20D /* Debug */,
+				03F992071FFF3E6C004AE20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03F991CF1FFF3E6C004AE20D /* Project object */;
+}
