@@ -13,8 +13,8 @@
 * Simple Utility Project
 
 ## Index
-### project 01. Timeline UI
-[](Resource/Project 1-TimeLine UI-Screenshot.png)
+### [project 01. Timeline UI](https://github.com/baecheese/Simple-Sample-Swift/tree/Project-01-Timeline/Prject-01-TimeLine)
+![](https://github.com/baecheese/Simple-Sample-Swift/blob/Project-01-Timeline/Resource/Project%201-TimeLine%20UI-Screenshot.png?raw=true)
 ### project 02. limit text edit
 ### project 03. To Do List
 ### project 04. Login
