@@ -12,6 +12,9 @@
 		031E2DF51FFC878A00A48DC1 /* TimeIntervalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E2DF41FFC878A00A48DC1 /* TimeIntervalTest.swift */; };
 		031E2DF81FFC99CC00A48DC1 /* TextPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E2DF61FFC99CC00A48DC1 /* TextPostTableViewCell.swift */; };
 		031E2DF91FFC99CC00A48DC1 /* TextPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031E2DF71FFC99CC00A48DC1 /* TextPostTableViewCell.xib */; };
+		031E2E3D1FFF24BA00A48DC1 /* heart-sketch.png in Resources */ = {isa = PBXBuildFile; fileRef = 031E2E3A1FFF24B800A48DC1 /* heart-sketch.png */; };
+		031E2E3E1FFF24BA00A48DC1 /* left-arrow-sketch.png in Resources */ = {isa = PBXBuildFile; fileRef = 031E2E3B1FFF24B900A48DC1 /* left-arrow-sketch.png */; };
+		031E2E3F1FFF24BA00A48DC1 /* two-arrows-sketch.png in Resources */ = {isa = PBXBuildFile; fileRef = 031E2E3C1FFF24B900A48DC1 /* two-arrows-sketch.png */; };
 		0326FD9B1FFB664700A9DCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0326FD9A1FFB664700A9DCAF /* AppDelegate.swift */; };
 		0326FDA01FFB664700A9DCAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0326FD9E1FFB664700A9DCAF /* Main.storyboard */; };
 		0326FDA21FFB664700A9DCAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0326FDA11FFB664700A9DCAF /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		031E2DF41FFC878A00A48DC1 /* TimeIntervalTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalTest.swift; sourceTree = "<group>"; };
 		031E2DF61FFC99CC00A48DC1 /* TextPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPostTableViewCell.swift; sourceTree = "<group>"; };
 		031E2DF71FFC99CC00A48DC1 /* TextPostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextPostTableViewCell.xib; sourceTree = "<group>"; };
+		031E2E3A1FFF24B800A48DC1 /* heart-sketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-sketch.png"; sourceTree = "<group>"; };
+		031E2E3B1FFF24B900A48DC1 /* left-arrow-sketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-arrow-sketch.png"; sourceTree = "<group>"; };
+		031E2E3C1FFF24B900A48DC1 /* two-arrows-sketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "two-arrows-sketch.png"; sourceTree = "<group>"; };
 		0326FD971FFB664700A9DCAF /* TimeLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0326FD9A1FFB664700A9DCAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0326FD9F1FFB664700A9DCAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				0326FD9A1FFB664700A9DCAF /* AppDelegate.swift */,
+				031E2E3A1FFF24B800A48DC1 /* heart-sketch.png */,
+				031E2E3B1FFF24B900A48DC1 /* left-arrow-sketch.png */,
+				031E2E3C1FFF24B900A48DC1 /* two-arrows-sketch.png */,
 				0326FDDB1FFB74A500A9DCAF /* contents.jpg */,
 				031E2DED1FFC818800A48DC1 /* thumbnail.png */,
 				031E2DEF1FFC84D500A48DC1 /* Support */,
@@ -291,12 +300,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031E2E3F1FFF24BA00A48DC1 /* two-arrows-sketch.png in Resources */,
 				0326FDA51FFB664700A9DCAF /* LaunchScreen.storyboard in Resources */,
 				0326FDA21FFB664700A9DCAF /* Assets.xcassets in Resources */,
+				031E2E3E1FFF24BA00A48DC1 /* left-arrow-sketch.png in Resources */,
 				031E2DF91FFC99CC00A48DC1 /* TextPostTableViewCell.xib in Resources */,
 				0326FDA01FFB664700A9DCAF /* Main.storyboard in Resources */,
 				0326FDDD1FFB74A500A9DCAF /* contents.jpg in Resources */,
 				0326FDD51FFB6A6700A9DCAF /* ImagePostTableViewCell.xib in Resources */,
+				031E2E3D1FFF24BA00A48DC1 /* heart-sketch.png in Resources */,
 				031E2DEE1FFC818800A48DC1 /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

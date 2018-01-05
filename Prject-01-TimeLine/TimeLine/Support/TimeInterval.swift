@@ -23,9 +23,12 @@ extension TimeInterval {
     }
     
     static func getTwitterTime(saveTime:TimeInterval) -> String {
-        if TimeInterval().minusMinute(point: TimeInterval().now(), minuteAmount: 1) < saveTime {
-            let agoMinute = Int((TimeInterval().now() - saveTime) / 60)
-            return "\(agoMinute) minute ago"
+        if TimeInterval().minusHour(point: TimeInterval().now(), hourAmount: 1) < saveTime {
+            let agoSecond = Int(TimeInterval().now() - saveTime)
+            if 59 < agoSecond {
+                return "\(agoSecond / 60) minute ago"
+            }
+            return "\(agoSecond) second ago"
         }
         return TimeInterval().formatString(time: saveTime, format: "yyyy.MM.dd a h:mm")
     }
@@ -44,6 +47,10 @@ extension TimeInterval {
     func minusHour(point: TimeInterval, hourAmount:Int) -> TimeInterval {
         let minusSecondsAmount = TimeInterval(60 * 60 * hourAmount)
         return point - minusSecondsAmount
+    }
+    
+    func minusSecond(secondAmount:Int) -> TimeInterval {
+        return self - TimeInterval(secondAmount)
     }
     
     func formatString(format:String) -> String {

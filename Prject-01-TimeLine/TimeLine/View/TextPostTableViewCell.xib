@@ -28,7 +28,7 @@
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVv-cj-lTh">
-                        <rect key="frame" x="66" y="11" width="238" height="80"/>
+                        <rect key="frame" x="66" y="11" width="238" height="75"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcW-0t-xqc">
                                 <rect key="frame" x="0.0" y="0.0" width="71" height="20"/>
@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contents" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aah-Fz-QDC">
-                                <rect key="frame" x="0.0" y="20" width="238" height="60"/>
+                                <rect key="frame" x="0.0" y="20" width="238" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,40 +81,49 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3e5-gG-pFr">
                         <rect key="frame" x="76" y="91" width="228" height="30"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y18-v5-0ht">
-                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y18-v5-0ht">
+                                <rect key="frame" x="5" y="5" width="25" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Dau-Go-Arb"/>
+                                    <constraint firstAttribute="width" constant="25" id="Dau-Go-Arb"/>
                                 </constraints>
-                                <state key="normal" title="멘션"/>
+                                <state key="normal" title="멘션" image="left-arrow-sketch.png"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YXi-zx-cao"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtC-VK-IFw">
-                                <rect key="frame" x="60" y="0.0" width="39" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtC-VK-IFw">
+                                <rect key="frame" x="60" y="5" width="25" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="39" id="2ym-YG-cCR"/>
+                                    <constraint firstAttribute="width" constant="25" id="2ym-YG-cCR"/>
                                 </constraints>
-                                <state key="normal" title="리트윗"/>
+                                <state key="normal" title="리트윗" image="two-arrows-sketch.png"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LfM-sg-BBN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-iO-JPl">
-                                <rect key="frame" x="129" y="0.0" width="30" height="30"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-iO-JPl">
+                                <rect key="frame" x="115" y="5" width="25" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="hZi-Rx-I7Q"/>
+                                    <constraint firstAttribute="width" constant="25" id="hZi-Rx-I7Q"/>
                                 </constraints>
-                                <state key="normal" title="마음"/>
+                                <state key="normal" title="마음" image="heart-sketch.png"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EVX-Xb-BTq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WtC-VK-IFw" firstAttribute="leading" secondItem="Y18-v5-0ht" secondAttribute="trailing" constant="30" id="Aqb-PF-9DH"/>
-                            <constraint firstItem="WtC-VK-IFw" firstAttribute="top" secondItem="3e5-gG-pFr" secondAttribute="top" id="AsL-Hv-3YV"/>
+                            <constraint firstItem="WtC-VK-IFw" firstAttribute="top" secondItem="3e5-gG-pFr" secondAttribute="top" constant="5" id="AsL-Hv-3YV"/>
                             <constraint firstAttribute="bottom" secondItem="Mci-iO-JPl" secondAttribute="bottom" id="DY3-0O-NRv"/>
                             <constraint firstAttribute="bottom" secondItem="WtC-VK-IFw" secondAttribute="bottom" id="E3P-nq-pBm"/>
                             <constraint firstAttribute="bottom" secondItem="Y18-v5-0ht" secondAttribute="bottom" id="Hcr-N9-aMt"/>
-                            <constraint firstItem="Y18-v5-0ht" firstAttribute="top" secondItem="3e5-gG-pFr" secondAttribute="top" id="aqf-yL-ohE"/>
+                            <constraint firstItem="Y18-v5-0ht" firstAttribute="top" secondItem="3e5-gG-pFr" secondAttribute="top" constant="5" id="aqf-yL-ohE"/>
                             <constraint firstItem="Mci-iO-JPl" firstAttribute="leading" secondItem="WtC-VK-IFw" secondAttribute="trailing" constant="30" id="haD-LC-eAb"/>
-                            <constraint firstItem="Y18-v5-0ht" firstAttribute="leading" secondItem="3e5-gG-pFr" secondAttribute="leading" id="nfF-DY-cqy"/>
+                            <constraint firstItem="Y18-v5-0ht" firstAttribute="leading" secondItem="3e5-gG-pFr" secondAttribute="leading" constant="5" id="nfF-DY-cqy"/>
                             <constraint firstAttribute="height" constant="30" id="rkA-1Y-VTG"/>
-                            <constraint firstItem="Mci-iO-JPl" firstAttribute="top" secondItem="3e5-gG-pFr" secondAttribute="top" id="z8d-iY-U0N"/>
+                            <constraint firstItem="Mci-iO-JPl" firstAttribute="top" secondItem="3e5-gG-pFr" secondAttribute="top" constant="5" id="z8d-iY-U0N"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -124,14 +133,26 @@
                     <constraint firstItem="7J3-wy-tMu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ThM-rE-1NL"/>
                     <constraint firstItem="UVv-cj-lTh" firstAttribute="leading" secondItem="7J3-wy-tMu" secondAttribute="trailing" constant="10" id="Uf7-Fv-Gih"/>
                     <constraint firstItem="3e5-gG-pFr" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Z4H-Mv-Sz3"/>
-                    <constraint firstItem="3e5-gG-pFr" firstAttribute="top" secondItem="UVv-cj-lTh" secondAttribute="bottom" id="gfu-sc-inE"/>
+                    <constraint firstItem="3e5-gG-pFr" firstAttribute="top" secondItem="UVv-cj-lTh" secondAttribute="bottom" constant="5" id="gfu-sc-inE"/>
                     <constraint firstAttribute="trailingMargin" secondItem="UVv-cj-lTh" secondAttribute="trailing" id="iQL-bB-COK"/>
                     <constraint firstItem="7J3-wy-tMu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="jgJ-ok-lfI"/>
                     <constraint firstItem="UVv-cj-lTh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kRL-5E-2In"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contents" destination="aah-Fz-QDC" id="uKh-Wo-KdG"/>
+                <outlet property="nickname" destination="YcW-0t-xqc" id="2OA-5b-fvd"/>
+                <outlet property="thumbnail" destination="7J3-wy-tMu" id="RcT-Gv-CBQ"/>
+                <outlet property="time" destination="jYZ-Ql-Pec" id="TA6-KB-js6"/>
+                <outlet property="userID" destination="cwG-8h-dJz" id="KdU-kV-dys"/>
+            </connections>
             <point key="canvasLocation" x="-125" y="50"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="heart-sketch.png" width="32" height="32"/>
+        <image name="left-arrow-sketch.png" width="32" height="32"/>
+        <image name="two-arrows-sketch.png" width="32" height="32"/>
+    </resources>
 </document>

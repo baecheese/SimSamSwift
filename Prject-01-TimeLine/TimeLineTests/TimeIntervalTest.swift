@@ -30,6 +30,25 @@ class TimeIntervalTest: XCTestCase {
         print(TimeInterval().getTwitterTime(saveTime: saveTime2))
     }
     
+    func testTwitterTime() {
+        let now = TimeInterval().now()
+        let before = TimeInterval().minusMinute(point: now, minuteAmount: 1)
+        let before2 = TimeInterval().minusSecond(point: now, secondAmount: 2)
+        print(getTwitterTime(saveTime: before))
+        print(getTwitterTime(saveTime: before2))
+    }
+    
+    func getTwitterTime(saveTime:TimeInterval) -> String {
+        if TimeInterval().minusHour(point: TimeInterval().now(), hourAmount: 1) < saveTime {
+            let agoSecond = Int(TimeInterval().now() - saveTime)
+            if 59 < agoSecond {
+                return "\(agoSecond / 60) minute ago"
+            }
+            return "\(agoSecond) second ago"
+        }
+        return TimeInterval().formatString(time: saveTime, format: "yyyy.MM.dd a h:mm")
+    }
+    
     
     func testPerformanceExample() {
         self.measure {
@@ -55,8 +74,10 @@ extension TimeInterval {
     
     func getTwitterTime(saveTime:TimeInterval) -> String {
         if minusHour(point: now(), hourAmount: 1) < saveTime {
-            let agoMinute = Int((now() - saveTime) / 60)
-            return "\(agoMinute) minute ago"
+            let agoMinute = Int((TimeInterval().now() - saveTime) / 60)
+            if agoMinute < 1 {
+                return "\(agoMinute * 60) second ago"
+            }
         }
         return formatString(time: saveTime, format: "yyyy.MM.dd a h:mm")
     }
@@ -70,6 +91,7 @@ extension TimeInterval {
         let minusSecondsAmount = TimeInterval(60 * minuteAmount)
         return point - minusSecondsAmount
     }
+    
     
     func minusHour(point: TimeInterval, hourAmount:Int) -> TimeInterval {
         let minusSecondsAmount = TimeInterval(60 * 60 * hourAmount)

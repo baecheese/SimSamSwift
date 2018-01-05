@@ -8,7 +8,18 @@
 
 import UIKit
 
-protocol ImagePostTableViewCellDelegate {
+enum CellAction : Int {
+    case metion = 0
+    case share = 1
+    case star = 2
+    
+    func tag() -> Int {
+        return self.rawValue
+    }
+    
+}
+
+protocol PostTableViewCellDelegate {
     func mentionPost(id:Int)
     func sharePost(id:Int)
     func starPost(id:Int)
@@ -16,42 +27,36 @@ protocol ImagePostTableViewCellDelegate {
 
 class ImagePostTableViewCell: UITableViewCell {
 
-    var delegate:ImagePostTableViewCellDelegate?
+    var delegate:PostTableViewCellDelegate?
     var postID:Int?
-    @IBOutlet weak var thumbnail: UIImageView!//
+    @IBOutlet weak var thumbnail: UIImageView!
     @IBOutlet weak var nickName: UILabel!
     @IBOutlet weak var userID: UILabel!
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var contents: UILabel!
-    @IBOutlet weak var imageContents: UIImageView!//
+    @IBOutlet weak var imageContents: UIImageView!
     
     func setPostInfo(post:Post) {
-        settingCell(id: post.postID, thumbnail: post.thumbnail,
-                    nickName: post.nickName, userID: post.userID,
-                    time: TimeInterval.getTwitterTime(saveTime: post.saveTime), contents: post.contents,
-                    imageContents: post.imageContents!)
-    }
-    
-    private func settingCell(id:Int, thumbnail:String, nickName:String, userID:String, time:String, contents:String, imageContents:String) {
-        self.postID = id
-        self.thumbnail = UIImageView(image: UIImage(named: thumbnail))
-        self.nickName.text = nickName
-        self.userID.text = userID
-        self.time.text = time // TimeInterval로 변경 (to do)
-        self.contents.text = contents
-        self.imageContents = UIImageView(image: UIImage(named: imageContents))
+        self.postID = post.postID
+        self.thumbnail.image = UIImage(named: post.thumbnail)
+        self.nickName.text = post.nickName
+        self.userID.text = post.userID
+        self.time.text = TimeInterval.getTwitterTime(saveTime: post.saveTime)
+        self.contents.text = post.contents
+        self.contents.contentMode = .scaleAspectFill
+        self.imageContents.image = UIImage(named: post.imageContents!)
     }
     
     @IBAction func clickButton(_ sender: UIButton) {
         // tag 0 답변 / 1 리트윗 / 2 마음
         if let selectPostID = postID {
-            if CellAction.metion.rawValue == sender.tag {
+            if CellAction.metion.tag() == sender.tag {
                 delegate?.mentionPost(id: selectPostID)
             }
-            else if CellAction.share.rawValue == sender.tag {
+            else if CellAction.share.tag() == sender.tag {
                 delegate?.sharePost(id: selectPostID)
             }
-            else if CellAction.star.rawValue == sender.tag {
+            else if CellAction.star.tag() == sender.tag {
                 delegate?.starPost(id: selectPostID)
             }
         }
@@ -65,10 +70,4 @@ class ImagePostTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-}
-
-enum CellAction : Int {
-    case metion = 0
-    case share = 1
-    case star = 2
 }

@@ -24,6 +24,10 @@ class TimeLineViewController: UIViewController {
                           contents: "1시간 전에 쓴 포스트입니다", imageContents: "contents.jpg"),
                      Post(postID: 3, thumbnail: "thumbnail.png",
                           nickName: "cheese", userID: "@cheese",
+                          saveTime: TimeInterval().now().minusSecond(secondAmount:3) ,
+                          contents: "3초 전에 쓴 포스트입니다", imageContents: "contents.jpg"),
+                     Post(postID: 4, thumbnail: "thumbnail.png",
+                          nickName: "cheese", userID: "@cheese",
                           saveTime: TimeInterval().now(),
                           contents: "방금 쓴 포스트입니다", imageContents: nil)
     ]
@@ -42,7 +46,7 @@ class TimeLineViewController: UIViewController {
     
 }
 
-extension TimeLineViewController : ImagePostTableViewCellDelegate {
+extension TimeLineViewController : PostTableViewCellDelegate {
     func mentionPost(id: Int) {
         print("click mention post \(id)")
     }
@@ -72,6 +76,8 @@ extension TimeLineViewController : UITableViewDataSource {
             return cell
         }
         let cell = Bundle.main.loadNibNamed("TextPostTableViewCell", owner: nil, options: nil)?.first as! TextPostTableViewCell
+        cell.setPostInfo(post: currentPost)
+        cell.delegate = self
         cell.selectionStyle = .none
         return cell
     }
