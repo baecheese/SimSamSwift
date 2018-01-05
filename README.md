@@ -14,6 +14,7 @@
 
 ## Index
 ### project 01. Timeline UI
+![](Resource/Project 1-TimeLine UI-Screenshot.png)
 ### project 02. limit text edit
 ### project 03. To Do List
 ### project 04. Login
