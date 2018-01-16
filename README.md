@@ -14,10 +14,8 @@
 
 ## Index
 ### [Project-01-Timeline UI](https://github.com/baecheese/Simple-Sample-Swift/tree/Project-01-Timeline/Prject-01-TimeLine)
-![](https://img.shields.io/badge/Progress-Complete-blue.svg)
 ![](https://github.com/baecheese/Simple-Sample-Swift/blob/Project-01-Timeline/Resource/Project%201-TimeLine%20UI-Screenshot.png?raw=true)
 ### [Project-02-limit text edit](https://github.com/baecheese/Simple-Sample-Swift/tree/master/Prject-02-LimitedTextEditor)
-![](https://img.shields.io/badge/Progress-Complete-blue.svg)
 ![](https://github.com/baecheese/Simple-Sample-Swift/blob/master/Prject-02-LimitedTextEditor/Plan/screenshot.png)
 ### Project-03-Floating Action Button
 ![](https://img.shields.io/badge/Progress-ing-yellow.svg)

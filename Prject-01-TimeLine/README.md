@@ -1,4 +1,9 @@
 # 📰 Timeline UI
+
+![](https://img.shields.io/badge/Platform-iOS-green.svg)
+![](https://img.shields.io/badge/swift-4.0-orange.svg)
+![](https://img.shields.io/badge/Progress-Complete-blue.svg)
+
 This repository contains timeline news feed in SNS format.
 
 ![](https://github.com/baecheese/Simple-Sample-Swift/blob/Project-01-Timeline/Resource/Project%201-TimeLine%20UI-Screenshot.png?raw=true)

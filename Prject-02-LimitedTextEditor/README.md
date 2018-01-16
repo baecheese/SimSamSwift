@@ -1,4 +1,9 @@
 # 📰 LimitedTextEditor
+
+![](https://img.shields.io/badge/Platform-iOS-green.svg)
+![](https://img.shields.io/badge/swift-4.0-orange.svg)
+![](https://img.shields.io/badge/Progress-Complete-blue.svg)
+
 This repository contains textView with character limit.
 
 ![](https://github.com/baecheese/Simple-Sample-Swift/blob/master/Prject-02-LimitedTextEditor/Plan/screenshot.png)
