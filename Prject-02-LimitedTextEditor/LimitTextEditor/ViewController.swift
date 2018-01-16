@@ -45,9 +45,10 @@ extension ViewController : UITextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
         countingText.title = "\(textview.text.count) / 50"
-        if 50 < textview.text.count {
+        if 51 == textview.text.count {
             toolBar.backgroundColor = .orange
-        } else {
+        }
+        else if 50 == textView.text.count {
             toolBar.backgroundColor = .yellow
         }
     }
